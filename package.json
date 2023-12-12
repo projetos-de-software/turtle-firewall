@@ -1,0 +1,28 @@
+{
+    "name": "turtle-firewall",
+    "version": "0.1.0",
+    "description": "O Turtle Firewall tem o objetivo de ser um conjunto de scripts e diretivas para montagem de um firewall em Linux RHEL 9.",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "prepare": "husky install",
+        "commit": "git-cz",
+        "release": "standard-version"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+        "@commitlint/cli": "^18.4.3",
+        "@commitlint/config-conventional": "^18.4.3",
+        "commitizen": "^4.3.0",
+        "cz-conventional-changelog": "^3.3.0",
+        "husky": "^8.0.3",
+        "standard-version": "^9.5.0"
+    },
+    "config": {
+        "commitizen": {
+            "path": "./node_modules/cz-conventional-changelog"
+        }
+    }
+}
